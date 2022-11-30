@@ -21,12 +21,8 @@
   height: 70%;
 }
 
-.experiencia h2 {
-  font-size: 2.8rem;
-  text-transform: uppercase;
+.experiencia .t-experiencia {
   color: #141414;
-  margin-left: -4px;
-  margin-bottom: 2rem;
 }
 
 .experiencia-grid {

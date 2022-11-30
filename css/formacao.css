@@ -1,0 +1,179 @@
+/* F0F0F0 */
+
+.formacao {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 3rem;
+}
+
+.formacao .title {
+  margin-bottom: 0;
+}
+
+.texto-formacao {
+  max-width: 60ch;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  color: #3D3D3D;
+}
+
+.texto-formacao strong {
+  color: #141414;
+}
+
+.t-formacao {
+  color: #7A7A7A;
+}
+
+.formacao-faculdade {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.0625rem;
+  width: 480px;
+  height: 282px;
+  border-radius: .2rem;
+  border: solid 1px #E0E0E0;
+  background: #F0F0F0;
+  padding: 1.875rem;
+}
+
+.formacao-faculdade::before {
+  content: '';
+  position: absolute;
+  top: 65px;
+  left: -10px;
+  display: block;
+  width: 10px;
+  height: 60px;
+  background: linear-gradient(180deg, #42079A 0%, #300079 0.01%, #9858FF 100%);
+}
+
+span {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #7A7A7A;
+}
+
+.curso {
+  font-size: 1.4rem;
+  max-width: 30ch;
+  font-weight: bold;
+  line-height: 1.3;
+  color: #525252;
+}
+
+.nome-faculdade {
+  position: absolute;
+  bottom: 1.625rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.formacao-extra {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+}
+
+.formacao-extra div:nth-child(2) ul li {
+  justify-content: initial;
+  column-gap: .5rem;
+}
+
+.formacao-extra div:nth-child(2) ul li span {
+  text-transform: capitalize;
+  color: #7A7A7A;
+}
+
+.formacao-extra ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: normal;
+  font-size: 1.25rem;
+  color: #292929;
+  line-height: 1.8;
+}
+
+.formacao-extra ul li span {
+  font-weight: normal;
+  color: #292929;
+}
+
+.t-formacao-extra {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #7A7A7A;
+}
+
+.t-formacao-extra::before {
+  content: '';
+  position: absolute;
+  left: -50px;
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-image: url('../img/book.svg');
+  background-repeat: no-repeat;
+}
+
+.t-formacao-extra.idiomas::before {
+  background-image: url('../img/translate.svg');
+}
+
+@media (max-width: 768px) {
+  .t-formacao-extra::before, .t-formacao-extra.idiomas::before {
+    left: -40px;
+    background-size: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .formacao .title {
+    margin-top: 4rem;
+    margin-bottom: 0;
+  }
+
+  .formacao-faculdade {
+    width: 340px;
+  }
+  .t-formacao-extra::before, .t-formacao-extra.idiomas::before {
+    top: -4px;
+    left: -30px;
+    background-size: 24px;
+  }
+}
+
+@media (max-width: 375px) {
+
+  .formacao {
+    row-gap: 2rem;
+  }
+
+  .formacao-faculdade {
+    width: 310px;
+  }
+
+  /* .t-formacao-extra {
+    margin-left: 5px;
+  } */
+
+  .texto-formacao,
+  .nome-faculdade,
+  .curso,
+  .formacao-extra ul li  {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .formacao-faculdade {
+    width: 300px;
+  }
+}

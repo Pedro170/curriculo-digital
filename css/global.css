@@ -18,6 +18,23 @@ img {
 
 main {
   padding: 0 3rem;
+  margin-bottom: 2rem;
+}
+
+main section:nth-child(2) {
+  padding: 0 1rem;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  margin-left: -4px;
+  margin-bottom: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -30,7 +47,17 @@ main {
   main {
     padding: 0 1rem;
   }
+
+  .title {
+    font-size: 2.5rem;
+  }
 }
+
+/* @media (max-width: 375px) {
+  main section:nth-child(2) {
+    padding: 0 1rem;
+  }
+} */
 
 @media (max-width: 360px) {
   main {
