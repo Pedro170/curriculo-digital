@@ -49,7 +49,7 @@
   background: linear-gradient(180deg, #42079A 0%, #300079 0.01%, #9858FF 100%);
 }
 
-span {
+.formacao span {
   text-transform: uppercase;
   font-weight: 500;
   color: #7A7A7A;

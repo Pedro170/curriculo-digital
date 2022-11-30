@@ -16,12 +16,12 @@ img {
   max-width: 100%;
 }
 
-main {
+#experiencia-formacao {
   padding: 0 3rem;
   margin-bottom: 2rem;
 }
 
-main section:nth-child(2) {
+#experiencia-formacao section:nth-child(2) {
   padding: 0 1rem;
 }
 
@@ -38,13 +38,13 @@ main section:nth-child(2) {
 }
 
 @media (max-width: 768px) {
-  main {
+  #experiencia-formacao {
     padding: 0 2rem;
   }
 }
 
 @media (max-width: 600px) {
-  main {
+  #experiencia-formacao {
     padding: 0 1rem;
   }
 
@@ -60,7 +60,7 @@ main section:nth-child(2) {
 } */
 
 @media (max-width: 360px) {
-  main {
+  #experiencia-formacao {
     padding: 0 .5rem;
   }
 }
