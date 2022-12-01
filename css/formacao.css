@@ -143,11 +143,15 @@
   .formacao-faculdade {
     width: 340px;
   }
+
   .t-formacao-extra::before, .t-formacao-extra.idiomas::before {
+    position: initial;
+  }
+  /* .t-formacao-extra::before, .t-formacao-extra.idiomas::before {
     top: -4px;
     left: -30px;
     background-size: 24px;
-  }
+  } */
 }
 
 @media (max-width: 375px) {
