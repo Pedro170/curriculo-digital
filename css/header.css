@@ -17,6 +17,18 @@
   overflow: hidden;
 }
 
+.header-box-img {
+  width: 300px;
+  border-radius: .25rem;
+  overflow: hidden;
+}
+
+.header-box-img {
+  width: 300px;
+  border-radius: .25rem;
+  overflow: hidden;
+}
+
 #header article .apresentacao {
   max-width: 50ch;
   font-size: 1.125rem;
